@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 function describeCountry(country, population, capitalCity) {
   return `${country} has ${population} million people and its capital city is ${capitalCity}`;
 }
@@ -13,9 +13,7 @@ console.log(ghana);
 console.log(finland);
 
 const wordPopulation = 7900;
-function percentageOfWorld1(population) {
-  return (population / wordPopulation) * 100;
-}
+
 const chinaPopulation = percentageOfWorld1(1441);
 console.log(chinaPopulation);
 
@@ -31,3 +29,18 @@ const percentageOfWorld2 = function (popultion) {
 
 const chinaPopulation2 = percentageOfWorld1(1441);
 console.log(chinaPopulation2);
+
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const describePopulation = function (country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentage}% of the world`;
+};
+
+const populationChina = describePopulation("China", 1441);
+console.log(populationChina);
+*/

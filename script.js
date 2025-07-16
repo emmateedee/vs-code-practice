@@ -6,4 +6,27 @@ function logger() {
 }
 
 logger();
+
+const calcAverage = (x, y, z) => (x + y + z) / 3;
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(95, 84, 99);
+
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= avgKoalas * 2) {
+        return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
+  } else if (avgDolphins * 2 <= avgKoalas) {
+    return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
+} else {
+    return `No team wins...`;
+}
+};
+console.log(checkWinner(scoreDolphins, scoreKoalas));
+
 */
+
+const calcAverage = function (grow) {
+  return grow;
+};
+console.log("abass");
