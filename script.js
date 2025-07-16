@@ -27,6 +27,21 @@ console.log(checkWinner(scoreDolphins, scoreKoalas));
 */
 
 const calcAverage = function (grow) {
-  return grow;
+  //   console.log(grow);
+  return grow * 5;
 };
-console.log("abass");
+calcAverage(99);
+
+function calcAverage2(grow) {
+  console.log(grow);
+}
+calcAverage2("Emmanuel");
+
+const calcAverage3 = (grow) => console.log(grow);
+calcAverage3("na men dey run am");
+
+const money = function (input) {
+  const addendum = calcAverage(input);
+  return `I've got ${addendum} million dollars in my bank account`;
+};
+console.log(money(20));
