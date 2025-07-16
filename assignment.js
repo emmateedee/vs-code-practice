@@ -54,3 +54,13 @@ const percentages = [
   percentageOfWorld1(populations[3]),
 ];
 console.log(percentages);
+
+const neighbours = ["Cameroon", "Niger", "Chad", "Benin republic"];
+neighbours.push("Utopia");
+neighbours.pop();
+
+if (!neighbours.includes("chad")) {
+  console.log("Probably not a west african country :D");
+}
+neighbours[2] = "chad republic";
+console.log(neighbours);
