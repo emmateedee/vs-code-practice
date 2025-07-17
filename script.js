@@ -69,11 +69,10 @@ console.log(emmanuel.friends);
 
 console.log(
     `${emmanuel.firstName} has ${emmanuel["friends"].length} friends and his best friend is ${emmanuel["friends"][0]}`
-    );
-*/
+);
 const emmanuel = {
-  firstName: "Emmanuel",
-  lastName: "Dauda",
+    firstName: "Emmanuel",
+    lastName: "Dauda",
   birthYear: 1998,
   job: "software engineer",
   friends: ["Miracle", "Evelyn", "Samuel", "Charles"],
@@ -82,9 +81,9 @@ const emmanuel = {
   calcAge: function () {
     this.age = 2037 - this.birthYear;
     return this.age;
-  },
+},
 
-  getSummary: function () {
+getSummary: function () {
     this.summary = `${this.firstName} ${this.lastName} is a ${
       this.job
     }, was born in ${this.birthYear} and he's ${this.age} years old. He has ${
@@ -98,3 +97,39 @@ console.log(emmanuel.calcAge());
 console.log(emmanuel.getSummary());
 console.log(emmanuel.summary);
 console.log(emmanuel["summary"]);
+
+*/
+
+const mark = {
+  firstName: "Mark",
+  lastName: "Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+
+const john = {
+  firstName: "John",
+  lastName: "Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+
+console.log(mark.calcBMI(), john.calcBMI());
+
+if (mark.BMI > john.BMI) {
+  console.log(
+    `${mark.firstName} ${mark.lastName}'s BMI (${mark.BMI}) is higher than ${john.firstName} ${john.lastName}'s (${john.BMI})`
+  );
+} else if (john.BMI > mark.BMI) {
+  console.log(
+    `${john.firstName} ${john.lastName}'s BMI (${john.BMI}) is higher than ${mark.firstName} ${mark.lastName}'s (${mark.BMI})`
+  );
+}
