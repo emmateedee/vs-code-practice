@@ -65,3 +65,25 @@ const describePopulation = function (country, population) {
     console.log(neighbours);
 
     */
+
+const myCountry = {
+  country: "Nigeria",
+  capital: "Abuja",
+  language: "english",
+  population: 200,
+  neighbours: ["Cameroon", "Niger", "Chad", "Benin republic"],
+  describe: function () {
+    return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`;
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+    return this.Island;
+  },
+};
+
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+console.log(myCountry.isIsland);
+
+console.log(myCountry.population + 2);
+console.log(myCountry["population"] - 2);
