@@ -44,7 +44,6 @@ const money = function (input) {
     return `I've got ${addendum} million dollars in my bank account`;
 };
 console.log(money(20));
-*/
 
 // const calcTip = function (bill) {
 //   if (bill >= 50 && bill <= 300) {
@@ -55,7 +54,7 @@ console.log(money(20));
 // };
 
 const calcTip = (bill) =>
-  bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+    bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 console.log(calcTip(100));
 
 const bills = [122, 555, 44];
@@ -65,17 +64,37 @@ console.log(tips);
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
 
-const emmanuel = {
-  firstName: "Emmanuel",
-  lastName: "Dauda",
-  age: 2037 - 1998,
-  job: "software engineer",
-  friends: ["Miracle", "Evelyn", "Samuel", "Charles"],
-};
-console.log(emmanuel);
 
 console.log(emmanuel.friends);
 
 console.log(
-  `${emmanuel.firstName} has ${emmanuel["friends"].length} friends and his best friend is ${emmanuel["friends"][0]}`
-);
+    `${emmanuel.firstName} has ${emmanuel["friends"].length} friends and his best friend is ${emmanuel["friends"][0]}`
+    );
+*/
+const emmanuel = {
+  firstName: "Emmanuel",
+  lastName: "Dauda",
+  birthYear: 1998,
+  job: "software engineer",
+  friends: ["Miracle", "Evelyn", "Samuel", "Charles"],
+  hasDriversLicense: false,
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    this.summary = `${this.firstName} ${this.lastName} is a ${
+      this.job
+    }, was born in ${this.birthYear} and he's ${this.age} years old. He has ${
+      this.friends.length
+    } friends. He has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+    return this.summary;
+  },
+};
+console.log(emmanuel);
+console.log(emmanuel.calcAge());
+console.log(emmanuel.getSummary());
+console.log(emmanuel.summary);
+console.log(emmanuel["summary"]);
