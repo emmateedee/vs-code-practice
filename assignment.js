@@ -40,27 +40,28 @@ const describePopulation = function (country, population) {
     
     const populationChina = describePopulation("China", 1441);
     console.log(populationChina);
+    const populations = [200, 1441, 30, 6];
+    console.log(populations.length === 4);
+
+    function percentageOfWorld1(population) {
+        return (population / 7900) * 100;
+    }
+    const percentages = [
+        percentageOfWorld1(populations[0]),
+        percentageOfWorld1(populations[1]),
+        percentageOfWorld1(populations[2]),
+        percentageOfWorld1(populations[3]),
+    ];
+    console.log(percentages);
+    
+    const neighbours = ["Cameroon", "Niger", "Chad", "Benin republic"];
+    neighbours.push("Utopia");
+    neighbours.pop();
+    
+    if (!neighbours.includes("chad")) {
+        console.log("Probably not a west african country :D");
+    }
+    neighbours[2] = "chad republic";
+    console.log(neighbours);
+
     */
-const populations = [200, 1441, 30, 6];
-console.log(populations.length === 4);
-
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
-const percentages = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[3]),
-];
-console.log(percentages);
-
-const neighbours = ["Cameroon", "Niger", "Chad", "Benin republic"];
-neighbours.push("Utopia");
-neighbours.pop();
-
-if (!neighbours.includes("chad")) {
-  console.log("Probably not a west african country :D");
-}
-neighbours[2] = "chad republic";
-console.log(neighbours);

@@ -64,3 +64,18 @@ console.log(tips);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
+
+const emmanuel = {
+  firstName: "Emmanuel",
+  lastName: "Dauda",
+  age: 2037 - 1998,
+  job: "software engineer",
+  friends: ["Miracle", "Evelyn", "Samuel", "Charles"],
+};
+console.log(emmanuel);
+
+console.log(emmanuel.friends);
+
+console.log(
+  `${emmanuel.firstName} has ${emmanuel["friends"].length} friends and his best friend is ${emmanuel["friends"][0]}`
+);
