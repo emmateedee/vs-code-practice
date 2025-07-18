@@ -100,3 +100,14 @@ for (let i = 0; i < populations.length; i++) {
   percentages2.push(percentageOfWorld1(populations[i]));
 }
 console.log(percentages2);
+
+const listOfNeigbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+for (let i = 0; i < listOfNeigbours.length; i++) {
+  for (let j = 0; j < listOfNeigbours[i].length; j++) {
+    console.log(`Neigbour: ${listOfNeigbours[i][j]}`);
+  }
+}
