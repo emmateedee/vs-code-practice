@@ -87,8 +87,8 @@ console.log(myCountry.isIsland);
 console.log(myCountry.population + 2);
 console.log(myCountry["population"] - 2);
 
-*/
 
 for (let i = 1; i <= 50; i++) {
-  console.log(`Voter number ${i} is currently voting`);
+    console.log(`Voter number ${i} is currently voting`);
 }
+*/

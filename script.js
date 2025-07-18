@@ -98,7 +98,6 @@ console.log(emmanuel.getSummary());
 console.log(emmanuel.summary);
 console.log(emmanuel["summary"]);
 
-*/
 
 const mark = {
   firstName: "Mark",
@@ -108,7 +107,7 @@ const mark = {
   calcBMI: function () {
     this.BMI = this.mass / (this.height * this.height);
     return this.BMI;
-  },
+},
 };
 
 const john = {
@@ -125,15 +124,49 @@ const john = {
 console.log(mark.calcBMI(), john.calcBMI());
 
 if (mark.BMI > john.BMI) {
-  console.log(
-    `${mark.firstName} ${mark.lastName}'s BMI (${mark.BMI}) is higher than ${john.firstName} ${john.lastName}'s (${john.BMI})`
-  );
+    console.log(
+        `${mark.firstName} ${mark.lastName}'s BMI (${mark.BMI}) is higher than ${john.firstName} ${john.lastName}'s (${john.BMI})`
+    );
 } else if (john.BMI > mark.BMI) {
-  console.log(
-    `${john.firstName} ${john.lastName}'s BMI (${john.BMI}) is higher than ${mark.firstName} ${mark.lastName}'s (${mark.BMI})`
+    console.log(
+        `${john.firstName} ${john.lastName}'s BMI (${john.BMI}) is higher than ${mark.firstName} ${mark.lastName}'s (${mark.BMI})`
   );
 }
 
 for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repitition ${rep}`);
+    console.log(`Lifting weights repitition ${rep}`);
 }
+
+    */
+
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < jonasArray.length; i++) {
+  console.log(jonasArray[i], typeof jonasArray[i]);
+  types.push(typeof jonasArray[i]);
+}
+console.log(types);
+
+// for (let i = 0; i < jonasArray.length; i++) {
+//   console.log(jonasArray[i], typeof jonasArray[i]);
+//   types[i] = typeof jonasArray[i];
+// }
+// console.log(types);
+
+const years = [1963, 1976, 1998, 2000, 2002, 2006, 2007, 2016];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  if (2038 - years[i] < 40) break;
+  ages.push(2038 - years[i]);
+}
+console.log(ages);
