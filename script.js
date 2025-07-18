@@ -133,9 +133,6 @@ if (mark.BMI > john.BMI) {
   );
 }
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repitition ${rep}`);
-}
 
 
 const types = [];
@@ -143,7 +140,7 @@ const types = [];
 for (let i = 0; i < jonasArray.length; i++) {
     console.log(jonasArray[i], typeof jonasArray[i]);
     types.push(typeof jonasArray[i]);
-}
+    }
 console.log(types);
 
 // for (let i = 0; i < jonasArray.length; i++) {
@@ -161,7 +158,6 @@ for (let i = 0; i < years.length; i++) {
 }
 console.log(ages);
 
-*/
 
 const jonasArray = [
   "Jonas",
@@ -171,12 +167,30 @@ const jonasArray = [
   ["Michael", "Peter", "Steven"],
 ];
 for (let i = jonasArray.length - 1; i >= 0; i--) {
-  console.log(jonasArray[i]);
+    console.log(jonasArray[i]);
 }
 
 for (let e = 1; e < 4; e++) {
-  console.log(`>>>>Starting exercise ${e}`);
-  for (let r = 1; r < 6; r++) {
-    console.log(`Exercise ${e}: rep ${r}`);
-  }
+    console.log(`>>>>Starting exercise ${e}`);
+    for (let r = 1; r < 6; r++) {
+        console.log(`Exercise ${e}: rep ${r}`);
+    }
+}
+*/
+
+for (let rep = 1; rep <= 10; rep++) {
+  //   console.log(`Lifting weights repitition ${rep}`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+  //   console.log(`while: Lifting weights rep ${rep}`);
+  rep++;
+}
+
+let dice = Math.floor(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled ${dice}`);
+  dice = Math.floor(Math.random() * 6) + 1;
 }
