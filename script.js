@@ -133,3 +133,7 @@ if (mark.BMI > john.BMI) {
     `${john.firstName} ${john.lastName}'s BMI (${john.BMI}) is higher than ${mark.firstName} ${mark.lastName}'s (${mark.BMI})`
   );
 }
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repitition ${rep}`);
+}
