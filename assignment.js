@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 const x = 'sleeping through';
 
 const calcAge = birthYear => 2037 - birthYear;
@@ -16,3 +16,4 @@ console.log(newStr);
 str === newStr
   ? console.log('word is a palindrome')
   : console.log('are you kidding me?');
+  */
