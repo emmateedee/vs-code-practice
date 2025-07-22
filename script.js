@@ -84,3 +84,12 @@ const printForecast = function (arr) {
 };
 const test = [12, 5, -5, 0, 4];
 printForecast([17, 21, 23]);
+
+const timeTracker = function (arr) {
+  let totalHours = 0;
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    totalHours += arr[0];
+    if (arr[i] > max) max = arr[i];
+  }
+};
